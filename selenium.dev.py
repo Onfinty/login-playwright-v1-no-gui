@@ -8,10 +8,10 @@ with sync_playwright() as p:
     page.goto(url)
     page.locator("#my-text-id").fill("Kero")
     page.get_by_text("password").fill('123456789')
-    page.get_by_text("Textarea").fill('Onfinty will Have a lot of money')
+    page.get_by_text("Textarea").fill('Onfinty123456789')
     page.select_option('[name="my-select"]',"2")
     page.locator('[name="my-datalist"]').fill("New York")
-    page.set_input_files('input[type="file"]',"kero.csv")
+    page.set_input_files('input[type="file"]',"kero.csv") # You can change the file you want to upload
     page.locator("#my-check-2").click()
     page.locator("#my-radio-2").click()
     page.locator('input[type="color"]').fill("#ff0000")
@@ -23,7 +23,7 @@ with sync_playwright() as p:
     page.locator('button[type="submit"]').click()
     submitted = page.locator('#message').text_content()
     if submitted =="Received!":
-        print("Good Job, Kero... the Form submitted successfully")
+        print("Good Job... the Form submitted successfully")
         page.screenshot(path="Form submitted.png")
         browser.close()
 
