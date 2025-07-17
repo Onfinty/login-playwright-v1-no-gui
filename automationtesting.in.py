@@ -1,0 +1,27 @@
+from playwright.sync_api import sync_playwright
+
+with sync_playwright() as p:
+    browser = p.chromium.launch(headless=False)
+    page = browser.new_page()
+    page.goto("https://demo.automationtesting.in/Register.html")
+    page.get_by_placeholder("First Name").fill("kero")
+    page.get_by_placeholder("Last Name").fill("infinty")
+    page.locator('[ng-model="Adress"]').fill("404 Infinity St, Cairo")
+    page.locator('[ng-model="EmailAdress"]').fill("kero.infinity@test.com")
+    page.locator('[ng-model="Phone"]').fill("01123456789")
+    page.locator('[value="Male"]').click()
+    page.locator("#checkbox1").click()
+    page.locator("#checkbox2").click()
+    page.locator("#msdd").click()
+    page.get_by_text("Arabic").click()
+    page.locator("body").click()
+    page.select_option("#Skills", "Python")
+    page.locator(".select2-selection").click()
+    page.locator(".select2-results__option", has_text="United States of America").click()
+    page.select_option("#yearbox", "2007")
+    page.select_option('[placeholder="Month"]', "July")
+    page.select_option("#daybox", "17")
+    page.locator("#firstpassword").fill("onfinty@123")
+    page.locator("#secondpassword").fill("onfinty@123")
+
+    page.wait_for_timeout(30000)
