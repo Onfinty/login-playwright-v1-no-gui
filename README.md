@@ -1,15 +1,25 @@
-# Login Playwright V1 - No GUI
+# 🔐 Login Automation with Playwright – V1 (No GUI)
 
-This is the first version of my web scraping automation projects using Playwright.  
-It includes login automation for:
+This is the **first version** of my web scraping automation project using [Playwright](https://playwright.dev/).
 
-- [selenium.dev](https://www.selenium.dev/selenium/web/web-form.html)
-- [automationtesting.in](https://demo.automationtesting.in/Register.html)
+### ✅ Features:
+- Automated login flow for:
+  - [selenium.dev](https://www.selenium.dev/selenium/web/web-form.html)
+  - [automationtesting.in](https://demo.automationtesting.in/Register.html)
 
-## Technologies
-- Python
-- Playwright
+### 🛠️ Tech Stack:
+- Python 3.12
+- Playwright (sync API)
+- VS Code
 
-## Next Step
-This is the initial version without GUI.  
-In the next version, a GUI will be implemented using Flet.
+### 🚀 Next Steps:
+This is the **backend-only** version without GUI.  
+The next release will include a full GUI using [Flet](https://flet.dev/).
+
+### 📂 Project Structure:
+├── Login.py
+├── automationtesting.in.py
+├── selenium.dev.py
+
+### 👨‍💻 Author:
+[Kero – OnFiNtY](https://github.com/Onfinty) 🔥
