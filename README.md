@@ -22,4 +22,4 @@ The next release will include a full GUI using [Flet](https://flet.dev/).
 ├── selenium.dev.py
 
 ### 👨‍💻 Author:
-[Kero – OnFiNtY](https://github.com/Onfinty) 🔥
+[OnFiNtY](https://github.com/Onfinty) 🔥
