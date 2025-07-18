@@ -7,7 +7,7 @@ This is the **first version** of my web scraping automation project using [Playw
   - [selenium.dev](https://www.selenium.dev/selenium/web/web-form.html)
   - [automationtesting.in](https://demo.automationtesting.in/Register.html)
   - [webscraper.io](https://webscraper.io/test-sites/e-commerce/allinone/computers/laptops)
-  - 
+    
 
 ### 🛠️ Tech Stack:
 - Python 3.13
